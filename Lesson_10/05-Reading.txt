@@ -1,0 +1,11 @@
+For this assignment, we will be using the following file found on Marylou:
+
+/fslgroup/fslg_BIO165/test.vcf
+We are looking for lines that have "PASS" in the 7th column. Remember that header lines start with “#”. Find all the header lines and lines that have the word “PASS” in the 7th column and print them to the screen. Pass may show up in other columns, but when in the 7th column it will appear alone and in all caps. Do not use regular expressions to do this. These files are tab delimited ("backslash t").
+
+Note: When you test your program, there will be a lot of lines printed to the screen. You must ensure that only one end of line character is printed after each line
+
+We will run your code using the following command:
+
+python3 studentcode.py test.vcf
+Remember to use system arguments to read the file

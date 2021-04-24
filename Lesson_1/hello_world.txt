@@ -1,0 +1,3 @@
+The purpose of this assignment is to help you become more familiar with common Python programming conventions and to practice using the Integer, Float, and String variable types.
+
+Please declare a variable that stores a value of Hello, World!. Then print the value of this variable. When declaring the variable, be sure to use a proper variable name as well as camel casing.

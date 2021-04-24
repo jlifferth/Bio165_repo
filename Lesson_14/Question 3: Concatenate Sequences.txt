@@ -1,0 +1,15 @@
+Your program should accept three system arguments: the paths to two fasta files and the path to the output fasta file.
+
+The input fasta files we will be using are found here:
+
+/fslgroup/fslg_BIO165/practice/fasta1.fasta
+/fslgroup/fslg_BIO165/practice/fasta2.fasta
+Each of these files have sequences with the same header lines. For each sequence, uppercase it, take the sequence from the second file and concatenate it to the sequence from file one. Then print out the resulting header lines and uppercase sequence to a file. The sequence should all be written on the same line, and the header lines should not be changed (i.e., do not uppercase the header lines).
+
+You must use a dictionary called "headers" for this exercise.
+
+You must keep the sequences in the same order as they appear in the first fasta file provided.
+
+We will test your code using the following command:
+
+python3 studentcode.py input1.fasta input2.fasta output.fasta

@@ -1,0 +1,14 @@
+Write a small python program that takes in one system argument: a DNA sequence. You will convert that sequence to uppercase and print out the changed sequence. In this example you can assume the user will enter a valid DNA sequence that can consist of both upper or lowercase letters. You should use a dictionary to do the conversion. The dictionary should have four keys, each one a lower case letter, and store the uppercase of the letter as the value.
+
+You may not use string.upper() or string.replace().
+
+You must call your dictionary "caps"
+
+We will test your code with the following commands:
+
+python3 studentcode.py AaTtCcGg
+python3 studentcode.py gctaAcGtCA
+The expected output for those commands is:
+
+AATTCCGG
+GCTAACGTCA

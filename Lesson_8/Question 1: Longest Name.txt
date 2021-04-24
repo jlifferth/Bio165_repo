@@ -1,0 +1,12 @@
+Your program will accept two command line arguments: one with your first name and one with your last. You should store each of these arguments as a separate variable. Compare the lengths of your first and last names and print a message that tells which of your names is longest or tells you if your names are the same length.
+
+We will test your code using the following commands:
+
+python3 studentcode.py Chuck Norris
+python3 studentcode.py Perry Ridge
+python3 studentcode.py Taylor Swift
+Your code should output the following:
+
+Norris is longer than Chuck.
+Perry is the same length as Ridge.
+Taylor is longer than Swift.

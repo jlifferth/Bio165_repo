@@ -1,0 +1,9 @@
+Write a program that takes one system argument: the user's age. The program should tell the user how old they are, how old they’ll be in five years (no decimals), and how old they’d be if they were half as old as they are now (including digits after the decimal). We will test your code using the following commands:
+
+python3 studentcode.py 17
+python3 studentcode.py 20
+For the first test, your code should produce the following output (pay attention to spelling and punctuation):
+
+You are 17 years old.
+You will be 22 in five years.
+Half your age is 8.5.

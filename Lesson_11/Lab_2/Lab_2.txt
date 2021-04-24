@@ -1,0 +1,48 @@
+The input to the program will be provided to your reverse complement and transcription programs via system arguments with the argv list in the sys module. For this lab, you do not need to understand completely what those are or how they work. You need simply import the sys module and extract the two file names from the argv list for later use. This should be familiar to you as we have done this in homework assignments and the previous lab. This can be accomplished by incorporating the following code at the top of your Python script:
+
+#! /usr/bin/env python
+
+
+import sys
+import re
+
+input_file_name = sys.argv[1]
+output_file_name = sys.argv[2]
+
+Thus, the two paths will be available via the input_file_name and output_file_name string variables. These file names will be provided to your programs from the command-line in the following manner (assuming one of your scripts is in the current directory and named lab2_rc.py and lab2_t.py for the reverse complement and transcription, respectively):
+
+python lab2_rc.py "input.fasta" "output.fasta"
+python lab2_t.py "input.fasta" "output.fasta"
+
+You may make the following assumptions about the system argument input provided to your program:
+
+sys.argv[1] will always contain the input file name for reading.
+sys.argv[2] will always contain the output file name for writing.
+You may assume that the file for reading is in your current working directory (i.e., you don’t need to worry about the path to the file).
+Exactly two system arguments will always be provided.
+The quotes surrounding the sequence on the command line will not be passed into the program, e.g., "input.fasta" will appear as input.fasta in Python.
+Of course, the other form of input to your program will be the fasta file at the path provided via system arguments. Recall that a fasta file consists of one or more records. Each record consists of one header line and one or more sequence lines. The header line always begins with a “>” character as the first character. Many fasta files have multiple sequence lines, limiting each sequence line to some number of nucleotides, typically 60–80, per line. This is convenient for humans to view, but annoying for programmers to process. Accordingly, for your convenience we will restrict the sequence, regardless of length, to a single line.
+
+The following is an example of a fasta file you may see as input for this lab:
+
+>Sequence_1
+ACGT
+>Some-other-sequence-number-two
+CGATCGATCGCTCGATCGTAGCTACGATCGATGCATGCTAGCTACGTAG
+>Yet another sequence - num. 13,672.889
+G
+> hey there ;)
+TAGCTACGTAGATCG
+
+You may make the following assumptions about the input fasta files for this lab:
+
+A fasta file will always exist at the path provided via system arguments.
+The fasta file will not be empty.
+The fasta file will contain at least one record.
+The sequence portion of each record will be restricted to a single line.
+No records will be malformed; more specifically, the following will hold true:
+Every header line will have a > as the first character.
+For every header line, exactly one sequence line will immediately follow.
+The file will contain no blank lines or lines with only whitespace.
+The sequence lines will contain no whitespace.
+The sequence lines will contain only valid nucleotides (e.g., A, C, G, and T), but sequence lines may contain both upper and lower case nucleotides.

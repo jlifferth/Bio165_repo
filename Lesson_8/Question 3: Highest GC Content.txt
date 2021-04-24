@@ -1,0 +1,12 @@
+Your code will accept three command line arguments: three DNA sequences. You need to print the one that has the highest GC content.
+
+We will test your code using the following commands:
+
+python3 studentcode.py ATCG GCGCGC ATTATAA
+python3 studentcode.py CGCGGG ATATA TTGTC
+python3 studentcode.py ATTGT GTATA GGGGCCGCC
+The expected output from these commands is:
+
+GCGCGC has the highest GC content.
+CGCGGG has the highest GC content.
+GGGGCCGCC has the highest GC content.

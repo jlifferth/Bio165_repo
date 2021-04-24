@@ -1,0 +1,8 @@
+We will be using the following file found on Marylou:
+
+/fslgroup/fslg_BIO165/input.fasta
+The fasta file above has several sequences in it. Recall that fasta files have a title line that starts with '>' followed by one or more sequence lines. Copy input.fasta to your home directory so you can write your program and test your code. Be sure to use system arguments to determine the name of the input and output files. The input fasta file name will be provided as the first system argument. The output fasta file name will be provided as the second system argument. The output file should have the exact same title lines as the input fasta file, but any sequences that appear on more than one line should be concatenated together and printed on one line, in uppercase. So, each sequence will have only one title line and only one uppercase sequence line. Finally, the file should end with an end-of-line character.
+
+We will test your code with the following command:
+
+python3 studentcode.py input.fasta output.fasta

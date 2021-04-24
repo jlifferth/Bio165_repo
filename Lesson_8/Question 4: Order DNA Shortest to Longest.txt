@@ -1,0 +1,12 @@
+Your code will accept three command line arguments: three DNA sequences. Your task is to print them, shortest to longest.
+
+We will test your code using the following commands:
+
+python3 studentcode.py A TG GTA
+python3 studentcode.py GTAAATG GT T
+python3 studentcode.py CCC GAGTAC AA
+We expect the following output from your program:
+
+A,TG,GTA
+T,GT,GTAAATG
+AA,CCC,GAGTAC

@@ -1,0 +1,10 @@
+Your code will accept two command line arguments: two sequences of DNA. You should compare them and tell the user whether or not they are the same sequence.
+
+We will test your code using the following commands:
+
+python3 studentcode.py ATCGA ATCGA
+python3 studentcode.py TGTGTAC TGA
+The correct output from those tests would be:
+
+They are the same sequence.
+They are not the same sequence.

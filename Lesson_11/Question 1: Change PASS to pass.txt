@@ -1,0 +1,9 @@
+We are looking for lines that have "PASS" in the 7th column. Remember that header lines start with "#". Find all the header lines and lines that have the word "PASS" in the 7th column. Replace "PASS" with "pass", using a regular expression, and then print those lines to a new file. The input file name will be provided as the first system argument. The output file name is the second system argument.
+
+The test file can be found on Marylou here:
+
+/fslgroup/fslg_BIO165/test.vcf
+We will test your code with the following command:
+
+python3 studentcode.py input.vcf output.vcf
+You must use re.sub to change PASS to pass.

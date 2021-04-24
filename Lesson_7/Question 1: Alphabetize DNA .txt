@@ -1,0 +1,10 @@
+Your program will accept three command line arguments: three DNA sequences. Remove any spaces in the sequences and convert them to uppercase. Put the three DNA sequences in a list. Alphabetize the list. Print the list as a list.
+
+We will test your code using the following commands:
+
+python3 studentcode.py "aAtcG aa TT" "a T c G" "agtggt TGTG"
+python3 studentcode.py "a t t t" "tAcGC" "aaCGa AA cT"
+The expected output from those tests would be:
+
+['AATCGAATT', 'AGTGGTTGTG', 'ATCG']
+['AACGAAACT', 'ATTT', 'TACGC']

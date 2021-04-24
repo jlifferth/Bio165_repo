@@ -1,0 +1,13 @@
+For this practice, your program will take two system arguments: a genomes file, and a genome name. We will be using the following genomes file:
+
+/fslgroup/fslg_BIO165/practice/genomes.txt
+which is a file that has genomes with their genome size, separated by a tab. You should open that file and programmatically create a dictionary with keys that are the genome names and the value is the genome size. Using the system argument of the genome name, retrieve the genome size from the dictionary and print it to the screen. You must use a dictionary called "genomes" for this exercise.
+
+We will test your code using the following commands:
+
+python3 studentcode.py genomes.tsv Fruit_Fly
+python3 studentcode.py genomes.tsv Human
+The expected output from those commands is:
+
+122,653,977
+3,000,000,000

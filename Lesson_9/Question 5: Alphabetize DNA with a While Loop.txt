@@ -1,0 +1,10 @@
+Your code will accept an unknown number of system arguments, each of which will be a DNA sequence. Convert the DNA sequences to uppercase using a while loop. Print the alphabetized list of sequences as a list. Your program should handle a mix of upper/lower case letters. You must use a while loop. You cannot use string.upper()
+
+We will test your code with the following commands:
+
+python3 studentcode.py A a t C g AA gG c AG T TA a G aaaa
+python3 studentcode.py c AAaattTTccCCggGGaAcCtTgG g
+The expected output from your program is:
+
+['A', 'A', 'A', 'AA', 'AAAA', 'AG', 'C', 'C', 'G', 'G', 'GG', 'T', 'T', 'TA']
+['AAAATTTTCCCCGGGGAACCTTGG', 'C', 'G']

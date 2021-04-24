@@ -1,0 +1,10 @@
+Your program will accept two command line arguments: a DNA sequence which consists of two exons separated by an intron, and the position in the sequence where the first exon ends, followed by a comma, followed by the position in the sequence where the second exon starts. The goal is to remove the intron and just put the two exons together. Hint: convert the exon end and start positions into a list to parse the numbers.
+
+We will test your code with the following commands:
+
+python3 studentcode.py ATATTTGTAAA 3,7
+python3 studentcode.py GCGTGTAATGCGTATTG 2,8
+The expected output for your program is:
+
+ATAGTAAA
+GCATGCGTATTG

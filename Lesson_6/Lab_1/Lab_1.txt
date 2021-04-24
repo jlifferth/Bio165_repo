@@ -1,0 +1,29 @@
+Your task is to write a Python program that accepts three DNA sequences as user input (system arguments), concatenate them into a single sequence, and calculate the GC content of that concatenated sequence. Ultimately, your grade will be based on a comparison of the output your program actually produced with the output your program was expected to produce. Unless otherwise specified, you may use any means to create the output from the provided input. We will describe the input you will receive, the output you must generate, and the process you must use to accomplish the task. We will also provide additional examples to assist with clarity.
+
+InputOutputProcessAdditional Examples
+The input to the program will be provided as system arguments via the argv list in the sys module. For this lab, you do not need to understand completely what those are or how they work. You need simply import the sys module and extract the three sequences from the argv list for later use. This should be familiar to you as we have done this in homework assignments. This can be accomplished by incorporating the following code at the top of your Python script:
+
+#! /usr/bin/env python
+
+import sys
+
+seq1 = sys.argv[1]
+seq2 = sys.argv[2]
+seq3 = sys.argv[3]
+
+Thus, the three sequences will be available via the seq1, seq2, and seq3 variables. These input sequences will be provided to your program from the command-line in the following manner (assuming your script is in the current directory and named lab1.py):
+
+python lab1.py "ACGT" "CGC" "TTG TAG"
+
+You may make the following assumptions about the input provided to your program:
+
+sys.argv[1] will always contain the first sequence provided by the user.
+sys.argv[2] will always contain the second sequence provided by the user.
+sys.argv[3] will always contain the third sequence provided by the user.
+Exactly three input sequences will always be provided.
+The three sequences will not necessarily be the same length.
+Each sequence will be a string.
+Each sequence will contain zero or more alphanumeric, punctuation, and/or whitespace characters (space and/or tab (\t)).
+This means a sequence could be an empty string ("") or contain only whitespace.
+Note that only As, Cs, Gs, Ts, (uppercase and lowercase) and whitespace (space or tab (\t)) characters are considered valid input.
+The quotes surrounding the sequence on the command line will not be passed into the program, e.g., "ACGT" will appear as ACGT in Python and "" would appear as an empty string.

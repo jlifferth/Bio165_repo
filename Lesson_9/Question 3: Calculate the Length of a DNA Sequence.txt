@@ -1,0 +1,10 @@
+You will receive one system argument from the user: a DNA sequence. Calculate the length of the sequence without using len().
+
+We will test your code using the following commands:
+
+python3 studentcode.py ATATATATATATA
+python3 studentcode.py CGACGAGCAAAGCAAAAAGGGAAA
+Your code should produce the following output:
+
+13
+24
